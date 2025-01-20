@@ -30,7 +30,7 @@ const Signup=()=>{
         "Content-Type":"application/json",
         'Accept': 'application/json'
       },
-      credentials:"same-origin",
+      credentials:"include",
       body:JSON.stringify({
         name, email, password,cpassword, phone, address
       })
