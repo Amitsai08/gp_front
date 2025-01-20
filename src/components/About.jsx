@@ -10,7 +10,7 @@ const About=()=>{
 
     const callAboutPage=async()=>{
        try{
-         const res = await fetch("/about",{
+         const res = await fetch("https://gpback-1y28.onrender.com/about",{
             method: "GET",
             headers:{
                 Accept: "application/json",

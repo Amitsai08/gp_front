@@ -10,7 +10,7 @@ const Grievance=()=>{
 
     const userContact=async()=>{
        try{
-         const res = await fetch("/getdata",{
+         const res = await fetch("https://gpback-1y28.onrender.com/getdata",{
             method: "GET",
             headers:{
                 "Content-Type": "application/json"
@@ -46,7 +46,7 @@ const Grievance=()=>{
        event.preventDefault();
 
        const {name,email,phone,dept,grievance}=userData;
-       const res=await fetch("/grievance",{
+       const res=await fetch("https://gpback-1y28.onrender.com/grievance",{
           method:"POST",
           headers:{
             "Content-Type": "application/json"
