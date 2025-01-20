@@ -30,10 +30,10 @@ const Signup=()=>{
         "Content-Type":"application/json",
         'Accept': 'application/json'
       },
-      credentials:"include",
       body:JSON.stringify({
         name, email, password,cpassword, phone, address
-      })
+      }),
+      mode: 'no-cors',
     });
     const data= await res.json();
 
